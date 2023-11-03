@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Grid rendszer</title>
+</head>
+
+<body>
+    <h1>Grid rendszerek</h1>
+    <p>
+        A grid egy rácsszekezet. Segít sorokban és oszlopokban rendezni
+        a HTML tartalmat.
+    </p>
+
+    <h1>Példák a grid-re</h1>
+    <h2>Oszloplok megadása</h2>
+    <div class="grid-4">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <h2>Sorok meghatározása</h2>
+    <div class="grid-4-row">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <h2>Elemek horizontális eéhelykedése</h2>
+    <p>
+        Ajustify content segítségével meghatározhatjuk
+        az elemek horizontális elhelyezkedését.
+    <ul>
+        <li>start -> bal oldal</li>
+        <li>end -> jobb oldal</li>
+        <li>center -> közép</li>
+        <li>space-between</li>
+        <li>space-around</li>
+        <li>space-evenly</li>
+    </ul>
+    </p>
+    <div class="grid-4-horizontal">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <h2>Elemek vertikális elhelyezkedése</h2>
+    <div class="grid-4-vertical">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <h2>Elemek kezelése</h2>
+    <div class="grid-4-elements">
+        <div class="grid-item grid-item-col-1-3"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item grid-item-row-2-4"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <h1>Flexbox</h1>
+    <h2>Elemek egymás mellé rakása</h2>
+    <div class="flex">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+
+    <h2>Elemek szélessége</h2>
+    <h3>Relatív szélesség</h3>
+    <div class="flex-elements">
+        <div class="flex-item-2" style="flex-grow: 1;">1</div>
+        <div class="flex-item-2" style="flex-grow: 2;">2</div>
+        <div class="flex-item-2" style="flex-grow: 2;">3</div>
+        <div class="flex-item-2" style="flex-grow: 1;">4</div>
+    </div>
+
+    <h3>Abszolút szélesség</h3>
+    <div class="flex-elements">
+        <div class="flex-item-2" style="flex-basis: 100px;">1</div>
+        <div class="flex-item-2" style="flex-basis: 150px;">2</div>
+        <div class="flex-item-2" style="flex-basis: 200px;">3</div>
+        <div class="flex-item-2" style="flex-basis: 100px;">4</div>
+    </div>
+
+    <h3>Elemek sorrendje</h3>
+    <div class="flex-elements">
+        <div class="flex-item-2" style="order: 4;">1</div>
+        <div class="flex-item-2" style="order: 3;">2</div>
+        <div class="flex-item-2" style="order: 2;">3</div>
+        <div class="flex-item-2" style="order: 1;">4</div>
+    </div>
+    <h1>Animációk</h1>
+    <h2>Egyszerű animációk</h2>
+    <div class="simple-anim-square"></div>
+
+    <h2>Bonyolultabb animáció</h2>
+    <div class="advanced-anim-square"></div>
+
+</body>
+
+</html>
